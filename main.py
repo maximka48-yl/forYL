@@ -7,8 +7,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Привет от приложения Flask"
+    return "hi!"
 
+
+@app.route("/home")
+def home():
+    return "ENGLISH mEn"
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
